@@ -1,0 +1,8 @@
+{
+  "rlStatsApiKey": "YOUR_RL_API_KEY",
+  "players": [
+    {"name": "Raymond", "platformId": "1", "uniqueId": "YOUR_UNIQUE_ID"},
+    {"name": "Maurice", "platformId": "2", "uniqueId": "YOUR_UNIQUE_ID"},
+    {"name": "Ginette", "platformId": "3", "uniqueId": "YOUR_UNIQUE_ID"}
+  ]
+}

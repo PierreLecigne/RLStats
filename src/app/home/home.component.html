@@ -1,0 +1,34 @@
+<table class="table table-hover table-striped">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Joueur</th>
+      <th>Plateforme</th>
+      <th>Victoires</th>
+      <th>Buts</th>
+      <th>Meilleur joueur</th>
+      <th>Arrêts</th>
+      <th>Tirs</th>
+      <th>Assistances</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <th scope="row">{{ player.name }}</th>
+      <td>{{ player.platform.name }}</td>
+      <td>{{ player.stats.wins }}</td>
+      <td>{{ player.stats.goals }}</td>
+      <td>{{ player.stats.mvps }}</td>
+      <td>{{ player.stats.saves }}</td>
+      <td>{{ player.stats.shots }}</td>
+      <td>{{ player.stats.assists }}</td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <div style="display: block">
+    <canvas baseChart
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [chartType]="barChartType"></canvas>
+  </div>
+</div>
